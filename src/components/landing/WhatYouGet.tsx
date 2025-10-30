@@ -66,7 +66,15 @@ const categories = [
     title: "Cristão e Religioso",
     description: "Temas evangélicos e inspiracionais",
     quote: "Artes que tocam o coração e vendem com propósito.",
-    images: PlaceHolderImages.filter(img => img.id.startsWith('christian-')).map(img => img.imageUrl),
+    images: [
+      'https://i.imgur.com/yhVzkjU.png',
+      'https://i.imgur.com/napRp2q.png',
+      'https://i.imgur.com/KprxC0o.png',
+      'https://i.imgur.com/YihtNfK.png',
+      'https://i.imgur.com/aMmUzNZ.png',
+      'https://i.imgur.com/CiyZG2Z.png',
+      'https://i.imgur.com/c3533nh.png'
+    ],
   },
   {
     icon: <Folder className="w-8 h-8 text-primary" />,
