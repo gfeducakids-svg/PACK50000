@@ -102,13 +102,6 @@ const categories = [
     quote: "Perfeito para quem vende para torcedores e fãs de música.",
     images: PlaceHolderImages.filter(img => img.id.startsWith('sports-')).map(img => img.imageUrl),
   },
-  {
-    icon: <Download className="w-8 h-8 text-primary" />,
-    title: "+ BÔNUS: Mockups Prontos",
-    description: "Canecas, camisetas, quadros e squeezes",
-    quote: "Use para exibir suas artes como se já estivessem prontas à venda.",
-    images: PlaceHolderImages.filter(img => img.id.startsWith('mockups-')).map(img => img.imageUrl),
-  },
 ];
 
 
@@ -118,8 +111,6 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
   return (
     <Card
       className="flex flex-col text-left overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
     >
       <CardHeader className="flex-row items-start gap-4 space-y-0 pt-4">
         {category.icon}
@@ -138,27 +129,15 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
           <p className="text-sm text-muted-foreground mb-3">{category.description}</p>
           <p className="text-sm font-italic text-foreground/80 border-l-2 border-primary pl-3">“{category.quote}”</p>
         </div>
-        <div className="relative mt-auto">
-          <Carousel className="w-full" opts={{ loop: true }}>
-            <CarouselContent>
-              {category.images.map((img, i) => (
-                <CarouselItem key={i}>
-                  <div className="aspect-[4/3] relative">
-                    <Image
-                      src={img}
-                      alt={`${category.title} example ${i + 1}`}
-                      fill
-                      className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <div className={`absolute inset-0 flex items-center justify-between px-2 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
-              <CarouselPrevious variant="ghost" className="text-white bg-black/30 hover:bg-black/50 hover:text-white" />
-              <CarouselNext variant="ghost" className="text-white bg-black/30 hover:bg-black/50 hover:text-white" />
+        <div className="relative mt-auto pt-4">
+            <div className="aspect-[4/3] relative">
+              <Image
+                src={category.images[0]}
+                alt={`${category.title} example 1`}
+                fill
+                className="object-cover rounded-md"
+              />
             </div>
-          </Carousel>
         </div>
       </CardContent>
     </Card>
@@ -172,10 +151,10 @@ export function WhatYouGet() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Oque você recebe dentro do Pack:
+            O que você recebe dentro do Pack:
           </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-            Tudo organizado em pastas temáticas, prontas para baixar e usar — são mais de 20 categorias com artes campeãs de venda!
+            Tudo organizado em pastas temáticas, prontas para baixar e usar — são mais de 20 categorias com artes campeãs de venda! Além disso, você recebe mockups prontos para canecas, camisetas, quadros e squeezes, para exibir suas artes como se já estivessem à venda.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
