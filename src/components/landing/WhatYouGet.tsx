@@ -49,7 +49,17 @@ const categories = [
       icon: <Star className="w-3 h-3 mr-1" />,
       variant: "secondary",
     },
-    images: PlaceHolderImages.filter(img => img.id.startsWith('cartoons-')).map(img => img.imageUrl),
+    images: [
+      'https://i.imgur.com/DNblik0.png',
+      'https://i.imgur.com/hxzkWdS.png',
+      'https://i.imgur.com/mHAazcy.png',
+      'https://i.imgur.com/2SzgvIW.png',
+      'https://i.imgur.com/D0f8R5o.png',
+      'https://i.imgur.com/Y2pLyZt.png',
+      'https://i.imgur.com/DVTL7Ys.png',
+      'https://i.imgur.com/0do8y9r.png',
+      'https://i.imgur.com/ptkj9F3.png'
+    ],
   },
   {
     icon: <Folder className="w-8 h-8 text-primary" />,
