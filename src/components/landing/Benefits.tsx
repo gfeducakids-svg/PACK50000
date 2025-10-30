@@ -32,10 +32,10 @@ export function Benefits() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Benefícios que transformam
+            Mais do que artes, uma ferramenta para o seu sucesso.
           </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-            Mais do que artes, uma ferramenta para o seu sucesso.
+            Benefícios que transformam
           </p>
         </div>
         <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-4">
