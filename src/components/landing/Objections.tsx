@@ -15,7 +15,7 @@ export function Objections() {
         <div className="grid gap-8 items-center justify-center text-center">
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-              Chega de desculpas. É hora de vender.
+              DÚVIDAS COMUNS
             </h2>
           </div>
           <div className="max-w-3xl mx-auto w-full">
