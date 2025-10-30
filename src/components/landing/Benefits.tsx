@@ -6,23 +6,23 @@ import { MarketIcon } from "./icons/MarketIcon";
 const benefits = [
   {
     icon: <ArtIcon />,
-    title: "50 mil artes premium",
-    description: "Economize meses de criação.",
+    title: "Não exige conhecimento técnico",
+    description: "Basta arrastar e imprimir.",
   },
   {
     icon: <SpeedIcon />,
-    title: "Ganhe velocidade",
-    description: "Publique novos produtos todos os dias.",
-  },
-  {
-    icon: <SalesIcon />,
-    title: "Aumente as vendas",
-    description: "Variedade = lucro recorrente.",
+    title: "Substitui meses de criação",
+    description: "É o atalho visual para vender mais rápido.",
   },
   {
     icon: <MarketIcon />,
     title: "Domine o mercado",
-    description: "Seja a referência da sua cidade.",
+    description: "Seja a referência em artes da sua cidade.",
+  },
+  {
+    icon: <SalesIcon />,
+    title: "Custo-benefício imbatível",
+    description: "Cada arte custaria caro, mas o pack hoje sai por R$19,90.",
   },
 ];
 
