@@ -92,7 +92,25 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="relative">
+      <CardHeader className="flex-row items-start gap-4 space-y-0 pt-4">
+        {category.icon}
+        <div className="flex-1">
+          <CardTitle className="text-lg">{category.title}</CardTitle>
+          {category.tag && (
+            <Badge variant={category.tag.variant as any} className="mt-1 text-xs">
+              {category.tag.icon}
+              {category.tag.text}
+            </Badge>
+          )}
+        </div>
+      </CardHeader>
+      <CardContent className="flex-1 flex flex-col justify-between">
+        <div>
+          <p className="text-sm text-muted-foreground mb-3">{category.description}</p>
+          <p className="text-sm font-italic text-foreground/80 border-l-2 border-primary pl-3">“{category.quote}”</p>
+        </div>
+      </CardContent>
+      <div className="relative mt-auto">
         <Carousel className="w-full" opts={{ loop: true }}>
           <CarouselContent>
             {category.images.map((img, i) => (
@@ -114,22 +132,6 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
           </div>
         </Carousel>
       </div>
-      <CardHeader className="flex-row items-start gap-4 space-y-0 pt-4">
-        {category.icon}
-        <div className="flex-1">
-          <CardTitle className="text-lg">{category.title}</CardTitle>
-          {category.tag && (
-            <Badge variant={category.tag.variant as any} className="mt-1 text-xs">
-              {category.tag.icon}
-              {category.tag.text}
-            </Badge>
-          )}
-        </div>
-      </CardHeader>
-      <CardContent className="flex-1 flex flex-col justify-between">
-        <p className="text-sm text-muted-foreground mb-3">{category.description}</p>
-        <p className="text-sm font-italic text-foreground/80 border-l-2 border-primary pl-3">“{category.quote}”</p>
-      </CardContent>
     </Card>
   );
 }
