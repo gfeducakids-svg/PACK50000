@@ -7,28 +7,148 @@
       "imageHint": "product box"
     },
     {
-      "id": "theme-heroes",
-      "description": "Thumbnail for the heroes theme.",
-      "imageUrl": "https://images.unsplash.com/photo-1659651012161-a0bda6652ffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3VwZXJoZXJvJTIwY29taWN8ZW58MHx8fHwxNzYxODQwMjA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "superhero comic"
+      "id": "heroes-1",
+      "description": "Heroes theme example 1",
+      "imageUrl": "https://images.unsplash.com/photo-1630921863029-b3abdbf5758b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzdXBlcmhlcm8lMjBhcnR8ZW58MHx8fHwxNzYxODUzNzk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "superhero art"
     },
     {
-      "id": "theme-pets",
-      "description": "Thumbnail for the pets theme.",
-      "imageUrl": "https://images.unsplash.com/photo-1546238232-20216dec9f72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjdXRlJTIwZG9nfGVufDB8fHx8MTc2MTc3MDA2OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cute dog"
+      "id": "heroes-2",
+      "description": "Heroes theme example 2",
+      "imageUrl": "https://images.unsplash.com/photo-1690040337678-e868ce9a6748?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb21pYyUyMGFjdGlvbnxlbnwwfHx8fDE3NjE4MTcxNzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "comic action"
     },
     {
-      "id": "theme-christian",
-      "description": "Thumbnail for the christian theme.",
-      "imageUrl": "https://images.unsplash.com/photo-1606002828062-acb5eee58ea5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcm9zcyUyMGZhaXRofGVufDB8fHx8MTc2MTg1MTgxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cross faith"
+      "id": "heroes-3",
+      "description": "Heroes theme example 3",
+      "imageUrl": "https://images.unsplash.com/photo-1626278664285-f796b9ee7806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdXBlcmhlcm8lMjBiYXR0bGV8ZW58MHx8fHwxNzYxODUzNzk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "superhero battle"
     },
     {
-      "id": "theme-special-dates",
-      "description": "Thumbnail for the special dates theme.",
-      "imageUrl": "https://images.unsplash.com/photo-1578922864601-79dcc7cbcea9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiaXJ0aGRheSUyMGNha2V8ZW58MHx8fHwxNzYxNzg2NjQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "birthday cake"
+      "id": "cartoons-1",
+      "description": "Cartoons theme example 1",
+      "imageUrl": "https://images.unsplash.com/photo-1531259683007-016a7b628fc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjYXJ0b29uJTIwY2hhcmFjdGVyfGVufDB8fHx8MTc2MTczMDY5NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cartoon character"
+    },
+    {
+      "id": "cartoons-2",
+      "description": "Cartoons theme example 2",
+      "imageUrl": "https://images.unsplash.com/photo-1655532391070-ef6c6e922e39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhbmltYXRlZCUyMHNlcmllc3xlbnwwfHx8fDE3NjE3NjU3NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "animated series"
+    },
+    {
+      "id": "cartoons-3",
+      "description": "Cartoons theme example 3",
+      "imageUrl": "https://images.unsplash.com/photo-1741512612538-dc33f6d00d1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxub3N0YWxnaWMlMjBjYXJ0b29ufGVufDB8fHx8MTc2MTg1Mzc5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "nostalgic cartoon"
+    },
+    {
+      "id": "special-dates-1",
+      "description": "Special dates theme example 1",
+      "imageUrl": "https://images.unsplash.com/photo-1729870526122-0de9a7113dc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiaXJ0aGRheSUyMGNlbGVicmF0aW9ufGVufDB8fHx8MTc2MTc2Njg3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "birthday celebration"
+    },
+    {
+      "id": "special-dates-2",
+      "description": "Special dates theme example 2",
+      "imageUrl": "https://images.unsplash.com/photo-1639420482727-e5706c91cbc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaHJpc3RtYXMlMjBnaWZ0fGVufDB8fHx8MTc2MTg1Mzc5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "christmas gift"
+    },
+    {
+      "id": "special-dates-3",
+      "description": "Special dates theme example 3",
+      "imageUrl": "https://images.unsplash.com/photo-1554355202-88fbb5fe8f8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb3RoZXJzJTIwZGF5fGVufDB8fHx8MTc2MTg1Mzc5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mothers day"
+    },
+    {
+      "id": "christian-1",
+      "description": "Christian theme example 1",
+      "imageUrl": "https://images.unsplash.com/photo-1533564161799-a9b114759e08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmYWl0aCUyMGNyb3NzfGVufDB8fHx8MTc2MTg1Mzc5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "faith cross"
+    },
+    {
+      "id": "christian-2",
+      "description": "Christian theme example 2",
+      "imageUrl": "https://images.unsplash.com/photo-1624472603343-98d661edfe9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiaWJsZSUyMHZlcnNlfGVufDB8fHx8MTc2MTg1Mzc5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bible verse"
+    },
+    {
+      "id": "christian-3",
+      "description": "Christian theme example 3",
+      "imageUrl": "https://images.unsplash.com/photo-1673217831183-02ce45bca17c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyZWxpZ2lvdXMlMjBhcnR8ZW58MHx8fHwxNzYxODUzNzk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "religious art"
+    },
+    {
+      "id": "pets-1",
+      "description": "Pets theme example 1",
+      "imageUrl": "https://images.unsplash.com/photo-1586289883499-f11d28aaf52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjdXRlJTIwY2F0fGVufDB8fHx8MTc2MTgzMzI4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cute cat"
+    },
+    {
+      "id": "pets-2",
+      "description": "Pets theme example 2",
+      "imageUrl": "https://images.unsplash.com/photo-1632469703327-d3367046e181?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwbGF5ZnVsJTIwZG9nfGVufDB8fHx8MTc2MTgyMDYwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "playful dog"
+    },
+    {
+      "id": "pets-3",
+      "description": "Pets theme example 3",
+      "imageUrl": "https://images.unsplash.com/photo-1556997685-309989c1aa82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmdW5ueSUyMGFuaW1hbHxlbnwwfHx8fDE3NjE4MTQ0NTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "funny animal"
+    },
+    {
+      "id": "sports-1",
+      "description": "Sports theme example 1",
+      "imageUrl": "https://images.unsplash.com/photo-1614632537190-23e4146777db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb2NjZXIlMjBiYWxsfGVufDB8fHx8MTc2MTc5MDA0NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "soccer ball"
+    },
+    {
+      "id": "sports-2",
+      "description": "Sports theme example 2",
+      "imageUrl": "https://images.unsplash.com/photo-1506157786151-b8491531f063?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtdXNpYyUyMGNvbmNlcnR8ZW58MHx8fHwxNzYxODE3NTU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "music concert"
+    },
+    {
+      "id": "sports-3",
+      "description": "Sports theme example 3",
+      "imageUrl": "https://images.unsplash.com/photo-1625392085241-a60d8d782c5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWFtJTIwbG9nb3xlbnwwfHx8fDE3NjE3OTQzNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team logo"
+    },
+    {
+      "id": "mockups-1",
+      "description": "Mockups example 1",
+      "imageUrl": "https://images.unsplash.com/photo-1542556398-95fb5b9f9b48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtdWclMjBtb2NrdXB8ZW58MHx8fHwxNzYxODQ0Njg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mug mockup"
+    },
+    {
+      "id": "mockups-2",
+      "description": "Mockups example 2",
+      "imageUrl": "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0c2hpcnQlMjBtb2NrdXB8ZW58MHx8fHwxNzYxODQ0Njg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tshirt mockup"
+    },
+    {
+      "id": "mockups-3",
+      "description": "Mockups example 3",
+      "imageUrl": "https://images.unsplash.com/photo-1567225477277-c8162eb4991d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnJhbWUlMjBtb2NrdXB8ZW58MHx8fHwxNzYxODUzNzk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "frame mockup"
+    },
+    {
+      "id": "typography-1",
+      "description": "Typography example 1",
+      "imageUrl": "https://images.unsplash.com/photo-1515288207449-100e125abccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW90aXZhdGlvbmFsJTIwcXVvdGV8ZW58MHx8fHwxNzYxODUzNzk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "motivational quote"
+    },
+    {
+      "id": "typography-2",
+      "description": "Typography example 2",
+      "imageUrl": "https://images.unsplash.com/photo-1563493934-b1e5519e7be6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsZXR0ZXJpbmclMjBkZXNpZ258ZW58MHx8fHwxNzYxODUzNzk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lettering design"
+    },
+    {
+      "id": "typography-3",
+      "description": "Typography example 3",
+      "imageUrl": "https://images.unsplash.com/photo-1592465873099-b0344127ab2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmdW5ueSUyMHBocmFzZXxlbnwwfHx8fDE3NjE4NTM3OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "funny phrase"
     }
   ]
 }
