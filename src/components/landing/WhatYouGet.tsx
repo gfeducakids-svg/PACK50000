@@ -81,7 +81,19 @@ const categories = [
     title: "Pets e Gatinho",
     description: "Gatinhos, cachorros, pets engraçados",
     quote: "A linha mais fofa e viral do pack.",
-    images: PlaceHolderImages.filter(img => img.id.startsWith('pets-')).map(img => img.imageUrl),
+    images: [
+      'https://i.imgur.com/y4EZwia.png',
+      'https://i.imgur.com/OARwdcX.png',
+      'https://i.imgur.com/1tsVTFe.png',
+      'https://i.imgur.com/UreJwby.png',
+      'https://i.imgur.com/aYoX9bd.png',
+      'https://i.imgur.com/9R4XQw6.png',
+      'https://i.imgur.com/XHJa4OY.png',
+      'https://i.imgur.com/b6yA8mr.png',
+      'https://i.imgur.com/zn5nMTa.png',
+      'https://i.imgur.com/0tW748T.png',
+      'https://i.imgur.com/dqWgEyT.png'
+    ],
   },
     {
     icon: <Folder className="w-8 h-8 text-primary" />,
