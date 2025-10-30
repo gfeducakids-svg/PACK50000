@@ -21,7 +21,7 @@ export function Hero() {
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-6 text-center lg:text-left">
             <h1 className="text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
-              O PACK secreto que OS estúdios usam para vender 3x mais
+              O Pack Secreto de 50MIL Artes Para Sublimação que os estúdios utilizam para vender 3x mais
             </h1>
             <p className="text-xl text-muted-foreground md:text-2xl">
               artes profissionais prontas para uso e edição por apenas{" "}
