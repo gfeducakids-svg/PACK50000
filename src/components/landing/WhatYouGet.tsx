@@ -1,17 +1,8 @@
 'use client';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Folder, Flame, Star, ChevronLeft, ChevronRight, Download } from "lucide-react";
+import { Folder, Flame, Star, Download, Music, Shield } from "lucide-react";
 import Image from "next/image";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import { useState } from "react";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const categories = [
   {
@@ -95,11 +86,26 @@ const categories = [
     ],
   },
     {
+    icon: <Folder className="w-8 h-8 text-primary" />,
+    title: "Jogadores e Cantores de Sertanejo",
+    description: "Artes de ídolos do futebol e da música sertaneja.",
+    quote: "A paixão nacional em forma de arte.",
+    images: [
+        'https://picsum.photos/seed/soccer1/400/300',
+        'https://picsum.photos/seed/sertanejo1/400/300',
+        'https://picsum.photos/seed/soccer2/400/300'
+    ],
+  },
+  {
     icon: <Download className="w-8 h-8 text-primary" />,
     title: "BÔNUS: Mockups Prontos",
     description: "Canecas, camisetas, quadros e muito mais. Use para exibir suas artes como se já estivessem prontas à venda.",
     quote: "Apresente seus produtos de forma profissional e venda mais.",
-    images: PlaceHolderImages.filter(img => img.id.startsWith('mockups-')).map(img => img.imageUrl),
+    images: [
+        'https://images.unsplash.com/photo-1542556398-95fb5b9f9b48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtdWclMjBtb2NrdXB8ZW58MHx8fHwxNzYxODQ0Njg0fDA&ixlib=rb-4.1.0&q=80&w=1080',
+        'https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0c2hpcnQlMjBtb2NrdXB8ZW58MHx8fHwxNzYxODQ0Njg0fDA&ixlib=rb-4.1.0&q=80&w=1080',
+        'https://images.unsplash.com/photo-1567225477277-c8162eb4991d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnJhbWUlMjBtb2NrdXB8ZW58MHx8fHwxNzYxODUzNzk4fDA&ixlib=rb-4.1.0&q=80&w=1080'
+    ],
     tag: {
       text: "Bônus Exclusivo",
       icon: <Star className="w-3 h-3 mr-1" />,
@@ -110,12 +116,9 @@ const categories = [
 
 
 function CategoryCard({ category }: { category: (typeof categories)[0] }) {
-  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <Card
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
       className="flex flex-col text-left overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl"
     >
       <CardHeader className="flex-row items-start gap-4 space-y-0 pt-4">
@@ -136,32 +139,14 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
           <p className="text-sm font-italic text-foreground/80 border-l-2 border-primary pl-3">“{category.quote}”</p>
         </div>
         <div className="relative mt-auto pt-4">
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            className="w-full"
-          >
-            <CarouselContent>
-              {category.images.map((imgSrc, index) => (
-                <CarouselItem key={index} className="basis-full">
-                  <div className="aspect-[4/3] relative">
-                    <Image
-                      src={imgSrc}
-                      alt={`${category.title} example ${index + 1}`}
-                      fill
-                      className="object-cover rounded-md"
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <div className={`absolute inset-0 flex items-center justify-between px-2 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
-              <CarouselPrevious className="static -ml-2 translate-y-0" />
-              <CarouselNext className="static -mr-2 translate-y-0" />
+            <div className="aspect-[4/3] relative">
+              <Image
+                src={category.images[0]}
+                alt={`${category.title} example 1`}
+                fill
+                className="object-cover rounded-md"
+              />
             </div>
-          </Carousel>
         </div>
       </CardContent>
     </Card>
@@ -190,3 +175,5 @@ export function WhatYouGet() {
     </section>
   );
 }
+
+    
