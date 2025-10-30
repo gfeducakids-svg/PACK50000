@@ -12,8 +12,8 @@ export function Hero() {
               O Pack Secreto de 50MIL Artes Para Sublimação que os estúdios utilizam para vender 3x mais
             </h1>
             <p className="text-xl text-muted-foreground md:text-2xl">
-              artes profissionais prontas para uso e edição por apenas{" "}
-              <span className="font-bold text-secondary">R$ 19,90</span>. Pare de perder horas criando artes e venda com o Sistema Express Design 3C.
+              Pare de perder horas criando artes! Aqui estão Artes profissionais prontas para uso e edição por apenas{" "}
+              <span className="font-bold text-secondary">R$ 19,90</span>.
             </p>
           </div>
           <div className="relative animate-float flex items-center justify-center">
