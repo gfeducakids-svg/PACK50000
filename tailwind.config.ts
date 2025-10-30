@@ -11,7 +11,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        headline: ['Montserrat', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
@@ -88,10 +88,29 @@ export default {
             height: '0',
           },
         },
+        'float': {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        'pulse-orange': {
+          '50%': { boxShadow: '0 0 0 15px hsl(var(--accent) / 0.4)' },
+        },
+        'slide-up': {
+          from: { opacity: '0', transform: 'translateY(20px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
+        },
+        'sparkle': {
+            '0%, 100%': { transform: 'scale(1)', filter: 'brightness(1)' },
+            '50%': { transform: 'scale(1.1)', filter: 'brightness(1.5)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'float': 'float 3s ease-in-out infinite',
+        'pulse-orange': 'pulse-orange 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'slide-up': 'slide-up 0.3s ease-out forwards',
+        'sparkle-on-click': 'sparkle 0.5s ease-in-out',
       },
     },
   },

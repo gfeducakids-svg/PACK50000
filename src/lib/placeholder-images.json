@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "pack-cover",
+      "description": "Cover of the 50,000 sublimation arts pack.",
+      "imageUrl": "https://images.unsplash.com/photo-1541544181051-e46607bc22a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwcm9kdWN0JTIwYm94fGVufDB8fHx8MTc2MTgzMzIxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "product box"
+    },
+    {
+      "id": "theme-heroes",
+      "description": "Thumbnail for the heroes theme.",
+      "imageUrl": "https://images.unsplash.com/photo-1659651012161-a0bda6652ffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3VwZXJoZXJvJTIwY29taWN8ZW58MHx8fHwxNzYxODQwMjA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "superhero comic"
+    },
+    {
+      "id": "theme-pets",
+      "description": "Thumbnail for the pets theme.",
+      "imageUrl": "https://images.unsplash.com/photo-1546238232-20216dec9f72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjdXRlJTIwZG9nfGVufDB8fHx8MTc2MTc3MDA2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cute dog"
+    },
+    {
+      "id": "theme-christian",
+      "description": "Thumbnail for the christian theme.",
+      "imageUrl": "https://images.unsplash.com/photo-1606002828062-acb5eee58ea5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcm9zcyUyMGZhaXRofGVufDB8fHx8MTc2MTg1MTgxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cross faith"
+    },
+    {
+      "id": "theme-special-dates",
+      "description": "Thumbnail for the special dates theme.",
+      "imageUrl": "https://images.unsplash.com/photo-1578922864601-79dcc7cbcea9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiaXJ0aGRheSUyMGNha2V8ZW58MHx8fHwxNzYxNzg2NjQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "birthday cake"
+    }
+  ]
 }
