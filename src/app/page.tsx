@@ -4,7 +4,6 @@ import { Faq } from "@/components/landing/Faq";
 import { Footer } from "@/components/landing/Footer";
 import { Hero } from "@/components/landing/Hero";
 import { Mechanism } from "@/components/landing/Mechanism";
-import { Objections } from "@/components/landing/Objections";
 import { WhatYouGet } from "@/components/landing/WhatYouGet";
 
 export default function Home() {
@@ -13,7 +12,6 @@ export default function Home() {
       <main className="flex-1">
         <div>
           <Hero />
-          <Objections />
           <WhatYouGet />
           <Mechanism />
           <Benefits />

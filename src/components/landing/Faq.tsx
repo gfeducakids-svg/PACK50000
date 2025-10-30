@@ -7,6 +7,31 @@ import {
 
 const faqs = [
   {
+    question: "Preciso saber usar Photoshop ou Corel?",
+    answer:
+      "Não. O pack inclui artes em PNG com fundo transparente, prontas para imprimir e usar em qualquer editor, inclusive no celular.",
+  },
+  {
+    question: "Funciona para quais produtos?",
+    answer:
+      "Funciona em qualquer produto personalizável: canecas, camisetas, chinelos, squeezes, azulejos, quadros e muito mais.",
+  },
+  {
+    question: "Como recebo o acesso?",
+    answer:
+      "A entrega é 100% digital e imediata após a confirmação do pagamento. Você recebe acesso vitalício para baixar quando e onde quiser.",
+  },
+  {
+    question: "Por que o preço é tão baixo?",
+    answer:
+      "O processo é totalmente automatizado e, por ser um produto digital, não temos custos com estoque ou frete. Repassamos essa economia para você!",
+  },
+  {
+    question: "E se eu não gostar?",
+    answer:
+      "Você tem uma garantia incondicional de 7 dias. Se não amar o conteúdo, basta pedir o reembolso e devolvemos 100% do seu dinheiro, sem perguntas.",
+  },
+  {
     question: "Posso usar em editor do celular?",
     answer:
       "Sim, os arquivos são em PNG com fundo transparente, compatíveis com a maioria dos editores de imagem para celular como Canva, PicsArt e outros.",
@@ -30,7 +55,7 @@ const faqs = [
 
 export function Faq() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/40">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
