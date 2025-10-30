@@ -63,13 +63,6 @@ const categories = [
   },
   {
     icon: <Folder className="w-8 h-8 text-primary" />,
-    title: "Datas Especiais",
-    description: "Feliz Natal, Dia das Mães, Páscoa, Aniversários",
-    quote: "Pronto para vender o ano todo.",
-    images: PlaceHolderImages.filter(img => img.id.startsWith('special-dates-')).map(img => img.imageUrl),
-  },
-  {
-    icon: <Folder className="w-8 h-8 text-primary" />,
     title: "Cristão e Religioso",
     description: "Temas evangélicos e inspiracionais",
     quote: "Artes que tocam o coração e vendem com propósito.",
