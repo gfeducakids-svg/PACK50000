@@ -14,7 +14,7 @@ const steps = [
   {
     icon: <Pencil className="w-12 h-12 text-primary" />,
     title: "Customize",
-    description: "Customize cores ou nomes se quiser.",
+    description: "Customize Cores,Nomes,Estampas FAÇA OQUE QUISER!",
   },
   {
     icon: <Gem className="w-12 h-12 text-primary" />,
