@@ -178,7 +178,7 @@ export function WhatYouGet() {
             O que você recebe dentro do Pack:
           </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-            Tudo organizado em pastas temáticas, prontas para baixar e usar — são mais de 20 categorias com artes campeãs de venda! Além disso, você recebe mockups prontos para canecas, camisetas, quadros e squeezes, para exibir suas artes como se já estivessem à venda.
+            Tudo organizado em pastas temáticas, prontas para baixar e usar são mais de 20 categorias com artes campeãs de venda!
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
