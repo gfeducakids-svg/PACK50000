@@ -5,6 +5,7 @@ import { Footer } from "@/components/landing/Footer";
 import { Hero } from "@/components/landing/Hero";
 import { Mechanism } from "@/components/landing/Mechanism";
 import { Objections } from "@/components/landing/Objections";
+import { WhatYouGet } from "@/components/landing/WhatYouGet";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <div>
           <Hero />
           <Objections />
+          <WhatYouGet />
           <Mechanism />
           <Benefits />
           <Cta />
