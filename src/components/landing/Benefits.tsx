@@ -2,7 +2,6 @@ import { ArtIcon } from "./icons/ArtIcon";
 import { SpeedIcon } from "./icons/SpeedIcon";
 import { SalesIcon } from "./icons/SalesIcon";
 import { MarketIcon } from "./icons/MarketIcon";
-import { ConfidenceIcon } from "./icons/ConfidenceIcon";
 
 const benefits = [
   {
@@ -25,11 +24,6 @@ const benefits = [
     title: "Domine o mercado",
     description: "Seja a referência da sua cidade.",
   },
-  {
-    icon: <ConfidenceIcon />,
-    title: "Recupere a confiança",
-    description: "Veja orgulho e reconhecimento no seu trabalho.",
-  },
 ];
 
 export function Benefits() {
@@ -44,7 +38,7 @@ export function Benefits() {
             Mais do que artes, uma ferramenta para o seu sucesso.
           </p>
         </div>
-        <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-5">
+        <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-4">
           {benefits.map((benefit, index) => (
             <div key={index} className="grid gap-4 text-center">
               <div className="mx-auto flex h-16 w-16 items-center justify-center">
