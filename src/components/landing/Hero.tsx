@@ -24,7 +24,7 @@ export function Hero() {
               O PACK secreto que OS estúdios usam para vender 3x mais
             </h1>
             <p className="text-xl text-muted-foreground md:text-2xl">
-              — e agora pode ser seu por apenas{" "}
+              artes profissionais prontas para uso e edição por apenas{" "}
               <span className="font-bold text-secondary">R$ 19,90</span>.
             </p>
             <p className="max-w-[600px] text-foreground/80 md:text-xl mx-auto lg:mx-0">
