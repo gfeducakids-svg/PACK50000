@@ -1,7 +1,7 @@
 'use client';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Folder, Flame, Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { Folder, Flame, Star, ChevronLeft, ChevronRight, Download } from "lucide-react";
 import Image from "next/image";
 import {
   Carousel,
@@ -103,8 +103,8 @@ const categories = [
     images: PlaceHolderImages.filter(img => img.id.startsWith('sports-')).map(img => img.imageUrl),
   },
   {
-    icon: <Folder className="w-8 h-8 text-primary" />,
-    title: "Mockups Prontos",
+    icon: <Download className="w-8 h-8 text-primary" />,
+    title: "+ BÔNUS: Mockups Prontos",
     description: "Canecas, camisetas, quadros e squeezes",
     quote: "Use para exibir suas artes como se já estivessem prontas à venda.",
     images: PlaceHolderImages.filter(img => img.id.startsWith('mockups-')).map(img => img.imageUrl),
@@ -178,7 +178,7 @@ export function WhatYouGet() {
             Tudo organizado em pastas temáticas, prontas para baixar e usar — são mais de 20 categorias com artes campeãs de venda!
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
           {categories.map((category, index) => (
             <CategoryCard key={index} category={category} />
           ))}
