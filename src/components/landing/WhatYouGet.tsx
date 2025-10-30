@@ -24,7 +24,20 @@ const categories = [
       icon: <Flame className="w-3 h-3 mr-1" />,
       variant: "destructive",
     },
-    images: PlaceHolderImages.filter(img => img.id.startsWith('heroes-')).map(img => img.imageUrl),
+    images: [
+        'https://i.imgur.com/CoVJncG.png',
+        'https://i.imgur.com/Ujau1ep.png',
+        'https://i.imgur.com/hblBVZu.png',
+        'https://i.imgur.com/YRoqE9z.png',
+        'https://i.imgur.com/wJZAirN.png',
+        'https://i.imgur.com/bfqLVCC.png',
+        'https://i.imgur.com/zDt2zkN.png',
+        'https://i.imgur.com/N13eQih.png',
+        'https://i.imgur.com/y5nr9j4.png',
+        'https://i.imgur.com/pZZsN4o.png',
+        'https://i.imgur.com/e6PVUEO.png',
+        'https://i.imgur.com/amV8hPu.png'
+    ],
   },
   {
     icon: <Folder className="w-8 h-8 text-primary" />,
@@ -109,29 +122,29 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
           <p className="text-sm text-muted-foreground mb-3">{category.description}</p>
           <p className="text-sm font-italic text-foreground/80 border-l-2 border-primary pl-3">“{category.quote}”</p>
         </div>
+        <div className="relative mt-auto">
+          <Carousel className="w-full" opts={{ loop: true }}>
+            <CarouselContent>
+              {category.images.map((img, i) => (
+                <CarouselItem key={i}>
+                  <div className="aspect-[4/3] relative">
+                    <Image
+                      src={img}
+                      alt={`${category.title} example ${i + 1}`}
+                      fill
+                      className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className={`absolute inset-0 flex items-center justify-between px-2 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+              <CarouselPrevious variant="ghost" className="text-white bg-black/30 hover:bg-black/50 hover:text-white" />
+              <CarouselNext variant="ghost" className="text-white bg-black/30 hover:bg-black/50 hover:text-white" />
+            </div>
+          </Carousel>
+        </div>
       </CardContent>
-      <div className="relative mt-auto">
-        <Carousel className="w-full" opts={{ loop: true }}>
-          <CarouselContent>
-            {category.images.map((img, i) => (
-              <CarouselItem key={i}>
-                <div className="aspect-[4/3] relative">
-                  <Image
-                    src={img}
-                    alt={`${category.title} example ${i + 1}`}
-                    fill
-                    className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <div className={`absolute inset-0 flex items-center justify-between px-2 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
-            <CarouselPrevious variant="ghost" className="text-white bg-black/30 hover:bg-black/50 hover:text-white" />
-            <CarouselNext variant="ghost" className="text-white bg-black/30 hover:bg-black/50 hover:text-white" />
-          </div>
-        </Carousel>
-      </div>
     </Card>
   );
 }
