@@ -20,7 +20,7 @@ const steps = [
     icon: <Gem className="w-12 h-12 text-primary" />,
     title: "Converta",
     description:
-      "Converta em produtos que vendem — rápido, sem depender de designer.",
+      "APROVEITE! Artes perfeitas que vendem rápido, sem depender de designer e economiza muito tempo!",
   },
 ];
 
