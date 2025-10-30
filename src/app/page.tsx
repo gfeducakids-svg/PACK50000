@@ -5,14 +5,12 @@ import { Footer } from "@/components/landing/Footer";
 import { Hero } from "@/components/landing/Hero";
 import { Mechanism } from "@/components/landing/Mechanism";
 import { Objections } from "@/components/landing/Objections";
-import { ProgressBar } from "@/components/landing/ProgressBar";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <main className="flex-1">
-        <ProgressBar />
-        <div className="pt-20">
+        <div>
           <Hero />
           <Objections />
           <Mechanism />
