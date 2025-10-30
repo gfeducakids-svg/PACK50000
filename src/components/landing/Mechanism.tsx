@@ -61,7 +61,7 @@ export function Mechanism() {
             </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Colete → Customize → Converta. Em 3 passos simples, você
-              transforma ideias em lucro.
+              consegue lucrar com nossas artes!
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
