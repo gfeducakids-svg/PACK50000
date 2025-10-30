@@ -13,7 +13,7 @@ export function Hero() {
             </h1>
             <p className="text-xl text-muted-foreground md:text-2xl">
               artes profissionais prontas para uso e edição por apenas{" "}
-              <span className="font-bold text-secondary">R$ 19,90</span>.
+              <span className="font-bold text-secondary">R$ 19,90</span>. Pare de perder horas criando artes e venda com o Sistema Express Design 3C.
             </p>
             <p className="max-w-[600px] text-foreground/80 md:text-xl mx-auto lg:mx-0">
               Pare de perder horas criando artes — cole, personalize e venda com o
