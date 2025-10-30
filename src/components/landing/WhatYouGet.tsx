@@ -89,13 +89,6 @@ const categories = [
     quote: "Use para exibir suas artes como se já estivessem prontas à venda.",
     images: PlaceHolderImages.filter(img => img.id.startsWith('mockups-')).map(img => img.imageUrl),
   },
-  {
-    icon: <Folder className="w-8 h-8 text-primary" />,
-    title: "Frases e Tipografia",
-    description: "Lettering, frases motivacionais, citações divertidas",
-    quote: "Designs versáteis para qualquer produto.",
-    images: PlaceHolderImages.filter(img => img.id.startsWith('typography-')).map(img => img.imageUrl),
-  },
 ];
 
 
