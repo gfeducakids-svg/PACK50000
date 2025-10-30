@@ -3,7 +3,6 @@ import { Cta } from "@/components/landing/Cta";
 import { Faq } from "@/components/landing/Faq";
 import { Footer } from "@/components/landing/Footer";
 import { Hero } from "@/components/landing/Hero";
-import { Mechanism } from "@/components/landing/Mechanism";
 import { WhatYouGet } from "@/components/landing/WhatYouGet";
 
 export default function Home() {
@@ -13,7 +12,6 @@ export default function Home() {
         <div>
           <Hero />
           <WhatYouGet />
-          <Mechanism />
           <Benefits />
           <Cta />
           <Faq />
