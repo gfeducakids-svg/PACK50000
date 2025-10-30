@@ -9,7 +9,7 @@ const steps = [
     icon: <FileSearch className="w-12 h-12 text-primary" />,
     title: "Colete",
     description:
-      "Colete a arte da sua preferência no seu google drive. Inclui Heróis,Séries,Cantores,Personagens",
+      "Colete a arte da sua preferência no pack. Incluindo Heróis,Séries,Cantores,Personagens,Bíblicos,Animais,Carros",
   },
   {
     icon: <Pencil className="w-12 h-12 text-primary" />,
