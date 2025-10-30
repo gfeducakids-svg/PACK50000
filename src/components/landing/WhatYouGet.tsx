@@ -71,7 +71,7 @@ export function WhatYouGet() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            O que você recebe dentro do Pack 50MIL Artes para Sublimação
+            Oque você recebe dentro do Pack:
           </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
             Tudo organizado em pastas temáticas, prontas para baixar e usar — são mais de 20 categorias com artes campeãs de venda!
