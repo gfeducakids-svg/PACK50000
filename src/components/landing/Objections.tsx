@@ -17,10 +17,6 @@ export function Objections() {
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
               Chega de desculpas. É hora de vender.
             </h2>
-            <p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
-              Quebramos todas as barreiras para você começar a lucrar com
-              sublimação hoje mesmo.
-            </p>
           </div>
           <div className="max-w-3xl mx-auto w-full">
             <ul className="grid gap-4 text-left">
