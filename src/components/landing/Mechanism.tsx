@@ -8,7 +8,8 @@ const steps = [
   {
     icon: <FileSearch className="w-12 h-12 text-primary" />,
     title: "Colete",
-    description: "Colete a arte perfeita no acervo de 50 mil.",
+    description:
+      "Colete a arte da sua preferência no seu google drive. Inclui Heróis,Séries,Cantores,Personagens",
   },
   {
     icon: <Pencil className="w-12 h-12 text-primary" />,
