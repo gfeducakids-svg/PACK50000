@@ -86,8 +86,7 @@ const categories = [
       'https://i.imgur.com/OARwdcX.png',
       'https://i.imgur.com/1tsVTFe.png',
       'https://i.imgur.com/UreJwby.png',
-      'https://i.imgur.com/aYoX9bd.png',
-      'https://i.imgur.com/9R4XQw6.png',
+      'https://i.imgur.com/aYoXQw6.png',
       'https://i.imgur.com/XHJa4OY.png',
       'https://i.imgur.com/b6yA8mr.png',
       'https://i.imgur.com/zn5nMTa.png',
@@ -96,11 +95,16 @@ const categories = [
     ],
   },
     {
-    icon: <Folder className="w-8 h-8 text-primary" />,
-    title: "Futebol e Sertanejo",
-    description: "Clubes, ídolos e temas populares",
-    quote: "Perfeito para quem vende para torcedores e fãs de música.",
-    images: PlaceHolderImages.filter(img => img.id.startsWith('sports-')).map(img => img.imageUrl),
+    icon: <Download className="w-8 h-8 text-primary" />,
+    title: "BÔNUS: Mockups Prontos",
+    description: "Canecas, camisetas, quadros e muito mais. Use para exibir suas artes como se já estivessem prontas à venda.",
+    quote: "Apresente seus produtos de forma profissional e venda mais.",
+    images: PlaceHolderImages.filter(img => img.id.startsWith('mockups-')).map(img => img.imageUrl),
+    tag: {
+      text: "Bônus Exclusivo",
+      icon: <Star className="w-3 h-3 mr-1" />,
+      variant: "default",
+    },
   },
 ];
 
@@ -110,6 +114,8 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
 
   return (
     <Card
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       className="flex flex-col text-left overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl"
     >
       <CardHeader className="flex-row items-start gap-4 space-y-0 pt-4">
@@ -130,14 +136,32 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
           <p className="text-sm font-italic text-foreground/80 border-l-2 border-primary pl-3">“{category.quote}”</p>
         </div>
         <div className="relative mt-auto pt-4">
-            <div className="aspect-[4/3] relative">
-              <Image
-                src={category.images[0]}
-                alt={`${category.title} example 1`}
-                fill
-                className="object-cover rounded-md"
-              />
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {category.images.map((imgSrc, index) => (
+                <CarouselItem key={index} className="basis-full">
+                  <div className="aspect-[4/3] relative">
+                    <Image
+                      src={imgSrc}
+                      alt={`${category.title} example ${index + 1}`}
+                      fill
+                      className="object-cover rounded-md"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className={`absolute inset-0 flex items-center justify-between px-2 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+              <CarouselPrevious className="static -ml-2 translate-y-0" />
+              <CarouselNext className="static -mr-2 translate-y-0" />
             </div>
+          </Carousel>
         </div>
       </CardContent>
     </Card>
