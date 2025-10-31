@@ -19,19 +19,42 @@ export function paymentApprovedTemplate({ name, access_url }: ConfirmationEmailP
   // Use interpolação de string para substituir os dados
   return `
     <!DOCTYPE html>
-    <html>
-    <head><title>Compra Aprovada!</title></head>
-    <body style="font-family: sans-serif; background-color: #f0fdf4; padding: 20px;">
-      <div style="max-width: 600px; margin: auto; background-color: #ffffff; border-radius: 12px; padding: 30px; text-align: center;">
-        <h1 style="color: #059669; font-size: 28px;">🎉 Pagamento Aprovado, ${name}!</h1>
-        <p style="font-size: 16px; color: #333;">Obrigado pela sua confiança! Seu acesso ao conteúdo está liberado.</p>
-        <a href="${access_url}" style="display: inline-block; margin-top: 20px; padding: 15px 30px; background-color: #10b981; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">
-          ACESSAR MEU CONTEÚDO AGORA
-        </a>
-        <p style="font-size: 12px; color: #666; margin-top: 20px;">Se o botão não funcionar, copie e cole este link no seu navegador: ${access_url}</p>
-      </div>
-    </body>
-    </html>
+<html>
+<head><title>🎨 Seu acesso ao Pack 50MIL Artes foi liberado!</title></head>
+<body style="font-family: 'Poppins', sans-serif; background-color: #f0fdf4; padding: 20px;">
+  <div style="max-width: 600px; margin: auto; background-color: #ffffff; border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+    
+    <h1 style="color: #059669; font-size: 28px; margin-bottom: 15px;">🎉 Compra aprovada, ${name}!</h1>
+    
+    <p style="font-size: 17px; color: #333; line-height: 1.6;">
+      Parabéns! Seu acesso ao <strong>Pack 50MIL Artes Para Sublimação</strong> foi liberado com sucesso.  
+      Agora você tem em mãos um dos maiores acervos de artes do Brasil — pronto para impulsionar sua criatividade e suas vendas.
+    </p>
+
+    <a href="${access_url}" 
+       style="display: inline-block; margin-top: 25px; padding: 16px 35px; background-color: #10b981; color: white; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 16px;">
+       🚀 ACESSAR MINHAS 50.000 ARTES
+    </a>
+
+    <p style="font-size: 15px; color: #444; margin-top: 25px; line-height: 1.6;">
+      Dica: comece explorando os <strong>temas mais vendidos</strong> — cristão, futebol, animes e datas comemorativas.  
+      Em poucos minutos, você já pode estar criando produtos personalizados prontos para vender.
+    </p>
+
+    <hr style="margin: 25px 0; border: none; border-top: 1px solid #dcfce7;">
+
+    <p style="font-size: 13px; color: #666;">
+      Se o botão acima não funcionar, copie e cole este link no seu navegador:<br>
+      <a href="${access_url}" style="color:#059669;">${access_url}</a>
+    </p>
+
+    <p style="font-size: 12px; color: #999; margin-top: 15px;">
+      Qualquer dúvida, nossa equipe está à disposição.  
+      Boas criações e boas vendas! 💚
+    </p>
+  </div>
+</body>
+</html>
   `;
 }
 
