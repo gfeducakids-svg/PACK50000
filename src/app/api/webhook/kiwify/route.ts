@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
         subject: '🎉 Acesso Liberado - 50 Mil Artes para Sublimação!',
         html: paymentApprovedTemplate({
           name: customerName,
-          access_url: 'http://localhost:9002/obrigado', // Substitua pelo link real
+          access_url: 'https://packinacreditavelartes.vercel.app/obrigado',
         })
       });
       console.log(`[Kiwify] ✅ E-mail de confirmação enviado para ${customerEmail}`);
@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
     else if (status === 'abandoned' && customerEmail) {
       console.log('[Kiwify] 🟨 Detectado: Carrinho Abandonado');
       
-      const checkoutLink = body.cart?.checkout_link ? `${body.cart.checkout_link}` : 'https://pay.kiwify.com.br/ptNH5jX';
+      const checkoutLink = 'https://pay.kiwify.com.br/ptNH5jX';
       
       await sendEmail({
         to: customerEmail,
