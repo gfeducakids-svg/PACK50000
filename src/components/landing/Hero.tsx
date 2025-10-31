@@ -1,20 +1,44 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Sparkles } from "lucide-react";
 import Image from "next/image";
 
 export function Hero() {
+
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*#/, "");
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <section className="w-full py-20 md:py-28 lg:py-32 bg-white dark:bg-gray-950">
+    <section className="w-full py-20 md:py-28 lg:py-32 bg-background">
       <div className="container px-4 md:px-6">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-6 text-center lg:text-left">
-            <h1 className="text-4xl font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl">
-              O Pack Secreto de 50MIL Artes Para Sublimação que os estúdios utilizam para vender 3x mais
+            <h1 className="text-4xl font-bold tracking-tighter text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+              O Pack Secreto de 50MIL Artes Para Sublimação
             </h1>
-            <p className="text-xl text-muted-foreground md:text-2xl">
-              Pare de perder horas criando artes! Aqui estão Artes profissionais prontas para uso e edição por apenas{" "}
-              <span className="font-bold text-secondary">R$ 19,90</span>.
+            <p className="text-lg text-muted-foreground md:text-xl">
+              Pare de perder horas criando artes! Com nosso pack, você tem artes profissionais prontas para usar e editar, por um preço inacreditável.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+               <a href="#cta-section" onClick={handleScroll}>
+                <Button size="lg" className="w-full sm:w-auto">
+                  QUERO O PACK AGORA <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+               </a>
+               <a href="#what-you-get-section" onClick={handleScroll}>
+                <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                  Ver o que está incluído <Sparkles className="ml-2 h-5 w-5" />
+                </Button>
+               </a>
+            </div>
           </div>
           <div className="relative animate-float flex items-center justify-center">
             <Image

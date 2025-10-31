@@ -1,13 +1,13 @@
 'use client';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Folder, Flame, Star, Download } from "lucide-react";
+import { Folder, Flame, Star, Palette, Rocket, PartyPopper } from "lucide-react";
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const categories = [
   {
-    icon: <Folder className="w-8 h-8 text-primary" />,
+    icon: <Rocket className="w-8 h-8 text-primary" />,
     title: "Heróis e Filmes",
     description: "Marvel, DC, Star Wars, He-Man, Power Rangers, Street Fighter",
     quote: "Os campeões de vendas em qualquer loja de personalizados.",
@@ -32,7 +32,7 @@ const categories = [
     ],
   },
   {
-    icon: <Folder className="w-8 h-8 text-primary" />,
+    icon: <Palette className="w-8 h-8 text-primary" />,
     title: "Desenhos e Nostalgia",
     description: "Bob Esponja, Tom & Jerry, Simpsons, Flintstones, Meninas Superpoderosas",
     quote: "Sucesso garantido entre crianças e adultos nostálgicos.",
@@ -105,7 +105,7 @@ const categories = [
     ],
   },
   {
-    icon: <Download className="w-8 h-8 text-primary" />,
+    icon: <PartyPopper className="w-8 h-8 text-primary" />,
     title: "BÔNUS: Mockups Prontos",
     description: "Canecas, camisetas, quadros e muito mais. Use para exibir suas artes como se já estivessem prontas à venda.",
     quote: "Apresente seus produtos de forma profissional e venda mais.",
@@ -127,24 +127,24 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
 
   return (
     <Card
-      className="flex flex-col text-left overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl"
+      className="flex flex-col text-left overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2"
     >
-      <CardHeader className="flex-row items-start gap-4 space-y-0 pt-4">
+      <CardHeader className="flex-row items-start gap-4 space-y-0 pt-6">
         {category.icon}
         <div className="flex-1">
-          <CardTitle className="text-lg">{category.title}</CardTitle>
+          <CardTitle className="text-lg font-bold">{category.title}</CardTitle>
           {category.tag && (
-            <Badge variant={category.tag.variant as any} className="mt-1 text-xs">
+            <Badge variant={category.tag.variant as any} className="mt-2 text-xs">
               {category.tag.icon}
               {category.tag.text}
             </Badge>
           )}
         </div>
       </CardHeader>
-      <CardContent className="flex-1 flex flex-col justify-between">
+      <CardContent className="flex-1 flex flex-col justify-between pt-4">
         <div>
-          <p className="text-sm text-muted-foreground mb-3">{category.description}</p>
-          <p className="text-sm font-italic text-foreground/80 border-l-2 border-primary pl-3">“{category.quote}”</p>
+          <p className="text-sm text-muted-foreground mb-4">{category.description}</p>
+          <p className="text-sm font-italic text-foreground/80 border-l-2 border-primary pl-3 mb-4">“{category.quote}”</p>
         </div>
         {category.images && category.images.length > 0 && (
           <Carousel className="relative mt-auto pt-4" opts={{ loop: true }}>
@@ -178,7 +178,7 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
 
 export function WhatYouGet() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-950">
+    <section id="what-you-get-section" className="w-full py-12 md:py-24 lg:py-32 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -188,7 +188,7 @@ export function WhatYouGet() {
             Tudo organizado em pastas temáticas, prontas para baixar e usar são mais de 20 categorias com artes campeãs de venda!
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {categories.map((category, index) => (
             <CategoryCard key={index} category={category} />
           ))}
