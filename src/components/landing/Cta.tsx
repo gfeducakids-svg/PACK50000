@@ -81,10 +81,11 @@ export function Cta() {
           </div>
           
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
-              Acesso vitalício por apenas <span className="text-primary">R$ 19,90</span>
+            <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
+              <span className="text-3xl sm:text-4xl text-muted-foreground line-through">DE R$97,00</span> por apenas <span className="text-primary">R$19,90</span>
             </h2>
             <p className="font-semibold text-lg text-primary">MENOS DE 1 CENTAVO POR ARTE!</p>
+            <p className="text-sm text-muted-foreground">Pagamento Único / Acesso Vitalício</p>
           </div>
 
           <Button
