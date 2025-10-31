@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Folder, Flame, Star, Download } from "lucide-react";
 import Image from "next/image";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const categories = [
   {
@@ -146,16 +147,28 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
           <p className="text-sm font-italic text-foreground/80 border-l-2 border-primary pl-3">“{category.quote}”</p>
         </div>
         {category.images && category.images.length > 0 && (
-          <div className="relative mt-auto pt-4">
-              <div className="aspect-[4/3] relative">
-                <Image
-                  src={category.images[0]}
-                  alt={`${category.title} example 1`}
-                  fill
-                  className="object-cover rounded-md"
-                />
-              </div>
-          </div>
+          <Carousel className="relative mt-auto pt-4" opts={{ loop: true }}>
+            <CarouselContent>
+              {category.images.map((image, index) => (
+                <CarouselItem key={index}>
+                  <div className="aspect-[4/3] relative">
+                    <Image
+                      src={image}
+                      alt={`${category.title} example ${index + 1}`}
+                      fill
+                      className="object-cover rounded-md"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            {category.images.length > 1 && (
+              <>
+                <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2" />
+                <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2" />
+              </>
+            )}
+          </Carousel>
         )}
       </CardContent>
     </Card>
