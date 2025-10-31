@@ -4,6 +4,7 @@ import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import { GradientBackground } from "@/components/ui/gradient-background";
 import Script from "next/script";
+import Head from "next/head";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,6 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <Head>
+        <link rel="preconnect" href="https://pay.kiwify.com.br" />
+      </Head>
       <body
         className={`${inter.variable} ${montserrat.variable} font-body antialiased`}
       >
