@@ -33,6 +33,11 @@ export function Hero() {
                   QUERO O PACK AGORA <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                </a>
+               <a href="#what-you-get-section" onClick={handleScroll}>
+                <Button size="lg" variant="outline" className="text-lg h-14 px-10">
+                  Ver o que está incluído <Sparkles className="ml-2 h-5 w-5" />
+                </Button>
+               </a>
             </div>
           </div>
           <div className="relative animate-float flex items-center justify-center">
