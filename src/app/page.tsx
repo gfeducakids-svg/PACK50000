@@ -6,7 +6,6 @@ import { Footer } from "@/components/landing/Footer";
 import { Guarantee } from "@/components/landing/Guarantee";
 import { Hero } from "@/components/landing/Hero";
 import { ProblemSolution } from "@/components/landing/ProblemSolution";
-import { WhatYouGet } from "@/components/landing/WhatYouGet";
 
 export default function Home() {
   return (
@@ -14,7 +13,6 @@ export default function Home() {
       <main className="flex-1">
         <div>
           <Hero />
-          <WhatYouGet />
           <ProblemSolution />
           <Benefits />
           <Cta />

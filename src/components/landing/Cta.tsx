@@ -64,6 +64,7 @@ export function Cta() {
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
             Acesso vitalício por apenas <span className="text-primary">R$ 19,90</span>
           </h2>
+          <p className="font-semibold text-lg text-primary">MENOS DE 1 CENTAVO POR ARTE!</p>
           <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed">
             Aproveite o preço promocional e garanta seus bônus exclusivos. A oferta termina em:
           </p>
@@ -85,7 +86,24 @@ export function Cta() {
             </div>
         </div>
 
-        <div className="w-full max-w-md mx-auto space-y-4">
+        <div className="w-full max-w-2xl mx-auto space-y-6">
+          <div className="text-left bg-background p-6 rounded-lg border">
+            <h3 className="text-2xl font-bold mb-4">50.000 Artes customizáveis com formatos variados contendo:</h3>
+            <ul className="space-y-2 text-muted-foreground text-left">
+                <li>🦸 Heróis e vilões que nunca saem de moda</li>
+                <li>🎬 Filmes, animes e séries de sucesso</li>
+                <li>🎮 Games que marcaram gerações</li>
+                <li>❤️ Desenhos animados infantis e adultos</li>
+                <li>🐾 Pets que conquistam corações</li>
+                <li>🚗 Carros populares streetwear</li>
+                <li>🏆 Futebol – craques eternizados</li>
+                <li>👑 Princesas lindas e deslumbrantes</li>
+                <li>✨ Artes cristãs exclusivas e inspiradoras</li>
+                <li>🎉 Datas comemorativas para diversas ocasiões e MUITO mais!</li>
+            </ul>
+            <p className="mt-4 text-muted-foreground"><strong>Mockups</strong> para camisetas, canecas, quadros e diversos outros produtos personalizados.</p>
+            <p className="mt-2 text-muted-foreground">Para <strong>Sublimação, DTF, DTG e Silk Screen</strong>, o pacote reúne Mais de 20 temas diferentes com os estilos mais procurados do mercado.</p>
+          </div>
           <Button
             size="lg"
             className="w-full text-lg font-bold bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg transition-transform duration-200 hover:scale-105"
