@@ -3,6 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import { GradientBackground } from "@/components/ui/gradient-background";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,6 +34,13 @@ export default function RootLayout({
         <GradientBackground />
         <div className="relative z-10">{children}</div>
         <Toaster />
+        <Script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          async
+          defer
+        ></Script>
       </body>
     </html>
   );
