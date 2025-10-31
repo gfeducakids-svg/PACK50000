@@ -109,11 +109,7 @@ const categories = [
     title: "BÔNUS: Mockups Prontos",
     description: "Canecas, camisetas, quadros e muito mais. Use para exibir suas artes como se já estivessem prontas à venda.",
     quote: "Apresente seus produtos de forma profissional e venda mais.",
-    images: [
-        'https://images.unsplash.com/photo-1542556398-95fb5b9f9b48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtdWclMjBtb2NrdXB8ZW58MHx8fHwxNzYxODQ0Njg0fDA&ixlib=rb-4.1.0&q=80&w=1080',
-        'https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0c2hpcnQlMjBtb2NrdXB8ZW58MHx8fHwxNzYxODQ0Njg0fDA&ixlib=rb-4.1.0&q=80&w=1080',
-        'https://images.unsplash.com/photo-1567225477277-c8162eb4991d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnJhbWUlMjBtb2NrdXB8ZW58MHx8fHwxNzYxODUzNzk4fDA&ixlib=rb-4.1.0&q=80&w=1080'
-    ],
+    images: [],
     tag: {
       text: "Bônus Exclusivo",
       icon: <Star className="w-3 h-3 mr-1" />,
