@@ -1,9 +1,12 @@
+'use client';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const faqs = [
   {
@@ -49,24 +52,33 @@ const faqs = [
 ];
 
 export function Faq() {
+
+  const handleScrollToCta = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.preventDefault();
+    const elem = document.getElementById('cta-section');
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+    <section className="w-full py-20 md:py-28 lg:py-32 bg-background">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-           <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm font-medium">
+           <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm font-semibold">
             FAQ
           </div>
-          <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-            Perguntas Frequentes
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
+            Ainda tem dúvidas?
           </h2>
-          <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
+          <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed">
             Tirando todas as suas dúvidas para você comprar com 100% de segurança.
           </p>
         </div>
-        <div className="mx-auto mt-12 max-w-3xl w-full">
+        <div className="mx-auto mt-12 max-w-4xl w-full">
           <Accordion type="single" collapsible className="w-full space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="bg-muted/50 rounded-lg border px-4">
+              <AccordionItem key={index} value={`item-${index}`} className="bg-muted/30 rounded-lg border-none px-6 py-2">
                 <AccordionTrigger className="text-lg font-semibold text-left hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
@@ -77,6 +89,15 @@ export function Faq() {
             ))}
           </Accordion>
         </div>
+        <div className="mt-16 text-center">
+            <Button
+              size="lg"
+              className="text-lg font-bold"
+              onClick={handleScrollToCta}
+            >
+              Estou pronto para comprar <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </div>
       </div>
     </section>
   );

@@ -1,8 +1,11 @@
+'use client';
 import { Benefits } from "@/components/landing/Benefits";
 import { Cta } from "@/components/landing/Cta";
 import { Faq } from "@/components/landing/Faq";
 import { Footer } from "@/components/landing/Footer";
+import { Guarantee } from "@/components/landing/Guarantee";
 import { Hero } from "@/components/landing/Hero";
+import { ProblemSolution } from "@/components/landing/ProblemSolution";
 import { WhatYouGet } from "@/components/landing/WhatYouGet";
 
 export default function Home() {
@@ -12,8 +15,10 @@ export default function Home() {
         <div>
           <Hero />
           <WhatYouGet />
+          <ProblemSolution />
           <Benefits />
           <Cta />
+          <Guarantee />
           <Faq />
         </div>
       </main>
