@@ -66,11 +66,8 @@ export function Faq() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
-            Ainda tem dúvidas?
-          </h2>
-          <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed">
             Tirando todas as suas dúvidas para você comprar com 100% de segurança.
-          </p>
+          </h2>
         </div>
         <div className="mx-auto mt-12 max-w-4xl w-full">
           <Accordion type="single" collapsible className="w-full space-y-4">
