@@ -31,9 +31,6 @@ export function Benefits() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Mais do que artes, uma ferramenta para o seu sucesso.
           </h2>
-          <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-            Benefícios que transformam seu negócio da água para o vinho.
-          </p>
         </div>
         <div className="mx-auto grid items-start gap-10 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-4">
           {benefits.map((benefit, index) => (
