@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Gift, ShieldCheck, CreditCard, RefreshCw } from "lucide-react";
+import { RainbowButton } from "../ui/rainbow-button";
 
 export function Cta() {
   const [timeLeft, setTimeLeft] = useState({
@@ -41,8 +42,7 @@ export function Cta() {
     };
   }, []);
 
-  const handleScrollToCta = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    e.preventDefault();
+  const handleScrollToCta = () => {
     const elem = document.getElementById('cta-section');
     elem?.scrollIntoView({
       behavior: "smooth",
@@ -88,13 +88,12 @@ export function Cta() {
             <p className="text-sm text-muted-foreground">Pagamento Único / Acesso Vitalício</p>
           </div>
 
-          <Button
-            size="lg"
-            className="w-full text-lg font-bold bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg transition-transform duration-200 hover:scale-105"
+          <RainbowButton
+            className="w-full"
             onClick={handleScrollToCta}
           >
             QUERO O PACK AGORA <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          </RainbowButton>
 
           <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
             <Gift className="w-4 h-4 text-primary" />

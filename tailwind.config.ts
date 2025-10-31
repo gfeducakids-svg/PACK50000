@@ -65,6 +65,11 @@ export default {
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))',
         },
+        "color-1": "hsl(var(--color-1))",
+        "color-2": "hsl(var(--color-2))",
+        "color-3": "hsl(var(--color-3))",
+        "color-4": "hsl(var(--color-4))",
+        "color-5": "hsl(var(--color-5))",
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -103,6 +108,10 @@ export default {
             '0%, 100%': { transform: 'scale(1)', filter: 'brightness(1)' },
             '50%': { transform: 'scale(1.1)', filter: 'brightness(1.5)' },
         },
+        rainbow: {
+          "0%": { "background-position": "0%" },
+          "100%": { "background-position": "200%" },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -111,6 +120,7 @@ export default {
         'pulse-orange': 'pulse-orange 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'slide-up': 'slide-up 0.3s ease-out forwards',
         'sparkle-on-click': 'sparkle 0.5s ease-in-out',
+        rainbow: "rainbow var(--speed, 2s) infinite linear",
       },
     },
   },

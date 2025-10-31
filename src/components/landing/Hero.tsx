@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { RainbowButton } from "@/components/ui/rainbow-button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import Image from "next/image";
 
@@ -29,9 +30,9 @@ export function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                <a href="#cta-section" onClick={handleScroll}>
-                <Button size="lg" className="w-full sm:w-auto">
+                <RainbowButton>
                   QUERO O PACK AGORA <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                </RainbowButton>
                </a>
                <a href="#what-you-get-section" onClick={handleScroll}>
                 <Button size="lg" variant="outline" className="w-full sm:w-auto">

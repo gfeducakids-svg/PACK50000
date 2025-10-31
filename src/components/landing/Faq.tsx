@@ -5,7 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
+import { RainbowButton } from "@/components/ui/rainbow-button";
 import { ArrowRight } from "lucide-react";
 
 const faqs = [
@@ -53,8 +53,7 @@ const faqs = [
 
 export function Faq() {
 
-  const handleScrollToCta = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    e.preventDefault();
+  const handleScrollToCta = () => {
     const elem = document.getElementById('cta-section');
     elem?.scrollIntoView({
       behavior: "smooth",
@@ -84,13 +83,11 @@ export function Faq() {
           </Accordion>
         </div>
         <div className="mt-16 text-center">
-            <Button
-              size="lg"
-              className="text-lg font-bold"
+            <RainbowButton
               onClick={handleScrollToCta}
             >
               Estou pronto para comprar <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            </RainbowButton>
           </div>
       </div>
     </section>
