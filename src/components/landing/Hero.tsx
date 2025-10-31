@@ -21,7 +21,7 @@ export function Hero() {
       <div className="container px-4 md:px-6">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-6 text-center lg:text-left">
-            <h1 className="text-5xl font-bold tracking-tighter text-foreground sm:text-6xl md:text-7xl lg:text-8xl">
+            <h1 className="text-5xl font-bold tracking-tighter text-foreground sm:text-6xl md:text-7xl">
               O pack com 50.000 artes que os estúdios escondem para continuar cobrando caro de você.
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl">
@@ -31,11 +31,6 @@ export function Hero() {
                <a href="#cta-section" onClick={handleScroll}>
                 <Button size="lg" variant="secondary" className="text-lg h-14 px-10">
                   QUERO O PACK AGORA <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-               </a>
-               <a href="#what-you-get-section" onClick={handleScroll}>
-                <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                  Ver o que está incluído <Sparkles className="ml-2 h-5 w-5" />
                 </Button>
                </a>
             </div>
