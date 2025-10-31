@@ -22,7 +22,7 @@ export function Hero() {
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-6 text-center lg:text-left">
             <h1 className="text-3xl font-bold tracking-tighter text-foreground sm:text-4xl md:text-5xl">
-              O pack com 50.000 artes que os estúdios escondem para continuar cobrando caro de você.
+              O pack com <span className="text-secondary">50.000 artes</span> que os estúdios <span className="text-muted-foreground">escondem</span> para continuar cobrando <span className="text-destructive">caro</span> de você.
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl">
               Pare de perder horas criando artes! Com nosso pack, você tem artes profissionais prontas para usar e editar, por um preço inacreditável.
@@ -31,11 +31,6 @@ export function Hero() {
                <a href="#cta-section" onClick={handleScroll}>
                 <Button size="lg" variant="secondary" className="text-lg h-14 px-10">
                   QUERO O PACK AGORA <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-               </a>
-               <a href="#what-you-get-section" onClick={handleScroll}>
-                <Button size="lg" variant="outline" className="text-lg h-14 px-10">
-                  Ver o que está incluído <Sparkles className="ml-2 h-5 w-5" />
                 </Button>
                </a>
             </div>
