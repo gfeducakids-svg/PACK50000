@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Gift } from "lucide-react";
+import { ArrowRight, Gift, ShieldCheck, CreditCard, RefreshCw } from "lucide-react";
 
 export function Cta() {
   const [timeLeft, setTimeLeft] = useState({
@@ -96,6 +96,20 @@ export function Cta() {
            <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
             <Gift className="w-4 h-4 text-primary" />
             <span>Últimos {500 - downloads} downloads com bônus!</span>
+          </div>
+        </div>
+        <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8 mt-8">
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <ShieldCheck className="w-5 h-5 text-primary" />
+            <span>Compra Segura via SSL</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <CreditCard className="w-5 h-5 text-primary" />
+            <span>Pagamento via PagSeguro</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <RefreshCw className="w-5 h-5 text-primary" />
+            <span>Garantia de 7 Dias</span>
           </div>
         </div>
       </div>
