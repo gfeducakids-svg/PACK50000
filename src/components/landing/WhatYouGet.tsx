@@ -144,7 +144,7 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
       <CardContent className="flex-1 flex flex-col justify-between pt-4">
         <div>
           <p className="text-sm text-muted-foreground mb-4">{category.description}</p>
-          <p className="text-sm font-italic text-foreground/80 border-l-2 border-primary pl-3 mb-4">“{category.quote}”</p>
+          <p className="text-sm font-italic text-foreground/80 border-l-2 border-primary pl-3 mb-4">{category.quote}</p>
         </div>
         {category.images && category.images.length > 0 && (
           <Carousel className="relative mt-auto pt-4" opts={{ loop: true }}>
