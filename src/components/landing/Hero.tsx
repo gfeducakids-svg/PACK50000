@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { RainbowButton } from "@/components/ui/rainbow-button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import Image from "next/image";
 
@@ -18,11 +17,11 @@ export function Hero() {
   };
 
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20 bg-background">
+    <section className="w-full py-8 md:py-12 lg:py-16">
       <div className="container px-4 md:px-6">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-6 text-center lg:text-left">
-            <h1 className="text-4xl font-bold tracking-tighter text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+            <h1 className="text-5xl font-bold tracking-tighter text-foreground sm:text-6xl md:text-7xl lg:text-8xl">
               O Pack Secreto de 50MIL Artes Para Sublimação
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl">
@@ -30,9 +29,9 @@ export function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                <a href="#cta-section" onClick={handleScroll}>
-                <RainbowButton>
+                <Button size="lg" variant="secondary" className="text-lg h-14 px-10">
                   QUERO O PACK AGORA <ArrowRight className="ml-2 h-5 w-5" />
-                </RainbowButton>
+                </Button>
                </a>
                <a href="#what-you-get-section" onClick={handleScroll}>
                 <Button size="lg" variant="outline" className="w-full sm:w-auto">

@@ -127,7 +127,7 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
 
   return (
     <Card
-      className="flex flex-col text-left overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2"
+      className="flex flex-col text-left overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-2 bg-background/80 backdrop-blur-sm"
     >
       <CardHeader className="flex-row items-start gap-4 space-y-0 pt-6">
         {category.icon}
@@ -178,7 +178,7 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
 
 export function WhatYouGet() {
   return (
-    <section id="what-you-get-section" className="w-full py-12 md:py-16 lg:py-20 bg-muted/30">
+    <section id="what-you-get-section" className="w-full py-8 md:py-12 lg:py-16 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
            <a id="what-you-get-section"></a>

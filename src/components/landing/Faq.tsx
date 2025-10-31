@@ -5,7 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { RainbowButton } from "@/components/ui/rainbow-button";
+import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const faqs = [
@@ -61,7 +61,7 @@ export function Faq() {
   };
 
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20 bg-background">
+    <section className="w-full py-8 md:py-12 lg:py-16">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
@@ -71,7 +71,7 @@ export function Faq() {
         <div className="mx-auto mt-12 max-w-4xl w-full">
           <Accordion type="single" collapsible className="w-full space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="bg-muted/30 rounded-lg border-none px-6 py-2">
+              <AccordionItem key={index} value={`item-${index}`} className="bg-background/80 backdrop-blur-sm rounded-lg border px-6 py-2">
                 <AccordionTrigger className="text-lg font-semibold text-left hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
@@ -83,11 +83,14 @@ export function Faq() {
           </Accordion>
         </div>
         <div className="mt-16 text-center">
-            <RainbowButton
+            <Button
+              size="lg"
+              variant="secondary"
+              className="text-lg h-14"
               onClick={handleScrollToCta}
             >
               Estou pronto para comprar <ArrowRight className="ml-2 h-5 w-5" />
-            </RainbowButton>
+            </Button>
           </div>
       </div>
     </section>

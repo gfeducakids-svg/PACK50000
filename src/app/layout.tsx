@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import { Toaster } from "@/components/ui/toaster";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
+import { GradientBackground } from "@/components/ui/gradient-background";
 
-const font = Plus_Jakarta_Sans({
+const inter = Inter({
   subsets: ["latin"],
-  variable: '--font-body',
+  variable: "--font-body",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-headline",
 });
 
 export const metadata: Metadata = {
@@ -20,8 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${font.variable} font-body antialiased`}>
-        {children}
+      <body
+        className={`${inter.variable} ${montserrat.variable} font-body antialiased`}
+      >
+        <GradientBackground />
+        <div className="relative z-10">{children}</div>
         <Toaster />
       </body>
     </html>

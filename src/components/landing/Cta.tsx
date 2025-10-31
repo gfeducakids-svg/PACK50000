@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Gift, ShieldCheck, CreditCard, RefreshCw } from "lucide-react";
-import { RainbowButton } from "../ui/rainbow-button";
 
 export function Cta() {
   const [timeLeft, setTimeLeft] = useState({
@@ -54,15 +53,15 @@ export function Cta() {
   return (
     <section
       id="cta-section"
-      className="w-full py-12 md:py-16 lg:py-20 bg-primary/5 border-t border-b border-primary/10"
+      className="w-full py-8 md:py-12 lg:py-16 bg-primary/5 border-t border-b border-primary/10"
     >
       <div className="container grid items-center justify-center gap-8 px-4 text-center md:px-6">
         <div className="w-full max-w-2xl mx-auto space-y-6">
-          <div className="inline-block rounded-lg bg-primary/10 px-4 py-2 text-base text-primary font-bold animate-pulse-slow">
+          <div className="inline-block rounded-lg bg-primary/10 px-4 py-2 text-base text-primary font-bold animate-pulse-slow shadow-lg border border-primary/20">
             Oferta Relâmpago
           </div>
 
-          <div className="text-left bg-background p-6 rounded-lg border">
+          <div className="text-left bg-background/80 backdrop-blur-sm p-6 rounded-lg border">
             <h3 className="text-2xl font-bold mb-4">50.000 Artes customizáveis com formatos variados contendo:</h3>
             <ul className="space-y-2 text-muted-foreground text-left">
                 <li>🦸 Heróis e vilões que nunca saem de moda</li>
@@ -84,16 +83,18 @@ export function Cta() {
             <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
               <span className="text-3xl sm:text-4xl text-destructive line-through">DE R$97,00</span> por apenas <span className="text-primary">R$19,90</span>
             </h2>
-            <p className="font-semibold text-base text-primary">MENOS DE 1 CENTAVO POR ARTE!</p>
+            <p className="font-semibold text-xs text-primary/80">MENOS DE 1 CENTAVO POR ARTE!</p>
             <p className="text-sm text-muted-foreground">Pagamento Único / Acesso Vitalício</p>
           </div>
 
-          <RainbowButton
-            className="w-full"
+          <Button
+            size="lg"
+            variant="secondary"
+            className="w-full text-lg h-16"
             onClick={handleScrollToCta}
           >
             QUERO O PACK AGORA <ArrowRight className="ml-2 h-5 w-5" />
-          </RainbowButton>
+          </Button>
 
           <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
             <Gift className="w-4 h-4 text-primary" />
@@ -105,17 +106,17 @@ export function Cta() {
               A oferta termina em:
               </p>
               <div className="flex items-center justify-center gap-4 text-4xl font-mono font-bold tracking-tighter text-primary">
-                  <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-background shadow-lg">
+                  <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-background/80 backdrop-blur-sm shadow-lg border">
                       <span className="text-4xl">{formatTime(timeLeft.hours)}</span>
                       <span className="text-xs font-sans font-medium tracking-normal text-muted-foreground">Horas</span>
                   </div>
                   <span className="text-3xl text-muted-foreground">:</span>
-                  <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-background shadow-lg">
+                  <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-background/80 backdrop-blur-sm shadow-lg border">
                       <span className="text-4xl">{formatTime(timeLeft.minutes)}</span>
                       <span className="text-xs font-sans font-medium tracking-normal text-muted-foreground">Min</span>
                   </div>
                   <span className="text-3xl text-muted-foreground">:</span>
-                  <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-background shadow-lg">
+                  <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-background/80 backdrop-blur-sm shadow-lg border">
                       <span className="text-4xl">{formatTime(timeLeft.seconds)}</span>
                       <span className="text-xs font-sans font-medium tracking-normal text-muted-foreground">Seg</span>
                   </div>
