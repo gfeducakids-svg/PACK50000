@@ -65,25 +65,6 @@ export function Cta() {
             Acesso vitalício por apenas <span className="text-primary">R$ 19,90</span>
           </h2>
           <p className="font-semibold text-lg text-primary">MENOS DE 1 CENTAVO POR ARTE!</p>
-          <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed">
-            Aproveite o preço promocional e garanta seus bônus exclusivos. A oferta termina em:
-          </p>
-        </div>
-        <div className="flex items-center justify-center gap-4 text-4xl font-mono font-bold tracking-tighter text-primary">
-            <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-background shadow-lg">
-                <span className="text-4xl">{formatTime(timeLeft.hours)}</span>
-                <span className="text-xs font-sans font-medium tracking-normal text-muted-foreground">Horas</span>
-            </div>
-            <span className="text-3xl text-muted-foreground">:</span>
-             <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-background shadow-lg">
-                <span className="text-4xl">{formatTime(timeLeft.minutes)}</span>
-                <span className="text-xs font-sans font-medium tracking-normal text-muted-foreground">Min</span>
-            </div>
-             <span className="text-3xl text-muted-foreground">:</span>
-             <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-background shadow-lg">
-                <span className="text-4xl">{formatTime(timeLeft.seconds)}</span>
-                <span className="text-xs font-sans font-medium tracking-normal text-muted-foreground">Seg</span>
-            </div>
         </div>
 
         <div className="w-full max-w-2xl mx-auto space-y-6">
@@ -111,11 +92,34 @@ export function Cta() {
           >
             QUERO O PACK AGORA <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-           <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
+          <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
             <Gift className="w-4 h-4 text-primary" />
             <span>Últimos {500 - downloads} downloads com bônus!</span>
           </div>
         </div>
+
+        <div className="space-y-4 mt-8">
+            <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed">
+            A oferta termina em:
+            </p>
+            <div className="flex items-center justify-center gap-4 text-4xl font-mono font-bold tracking-tighter text-primary">
+                <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-background shadow-lg">
+                    <span className="text-4xl">{formatTime(timeLeft.hours)}</span>
+                    <span className="text-xs font-sans font-medium tracking-normal text-muted-foreground">Horas</span>
+                </div>
+                <span className="text-3xl text-muted-foreground">:</span>
+                <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-background shadow-lg">
+                    <span className="text-4xl">{formatTime(timeLeft.minutes)}</span>
+                    <span className="text-xs font-sans font-medium tracking-normal text-muted-foreground">Min</span>
+                </div>
+                <span className="text-3xl text-muted-foreground">:</span>
+                <div className="flex h-24 w-24 flex-col items-center justify-center rounded-lg bg-background shadow-lg">
+                    <span className="text-4xl">{formatTime(timeLeft.seconds)}</span>
+                    <span className="text-xs font-sans font-medium tracking-normal text-muted-foreground">Seg</span>
+                </div>
+            </div>
+        </div>
+
         <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8 mt-8">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <ShieldCheck className="w-5 h-5 text-primary" />
