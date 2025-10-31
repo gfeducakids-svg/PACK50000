@@ -77,7 +77,8 @@ const categories = [
       'https://i.imgur.com/OARwdcX.png',
       'https://i.imgur.com/1tsVTFe.png',
       'https://i.imgur.com/UreJwby.png',
-      'https://i.imgur.com/aYoXQw6.png',
+      'https://i.imgur.com/aYoX9bd.png',
+      'https://i.imgur.com/9R4XQw6.png',
       'https://i.imgur.com/XHJa4OY.png',
       'https://i.imgur.com/b6yA8mr.png',
       'https://i.imgur.com/zn5nMTa.png',
@@ -90,6 +91,17 @@ const categories = [
     title: "Jogadores e Cantores de Sertanejo",
     description: "Artes de ídolos do futebol e da música sertaneja.",
     quote: "A paixão nacional em forma de arte.",
+    images: [
+      'https://i.imgur.com/GdCkZpo.png',
+      'https://i.imgur.com/SEUjtT5.png',
+      'https://i.imgur.com/dYBJSXP.png',
+      'https://i.imgur.com/d7qIZqz.png',
+      'https://i.imgur.com/K46sAIt.png',
+      'https://i.imgur.com/7LIhnt9.png',
+      'https://i.imgur.com/GndJbaV.png',
+      'https://i.imgur.com/EMUvcSc.png',
+      'https://i.imgur.com/4TYNPQ8.png'
+    ],
   },
   {
     icon: <Download className="w-8 h-8 text-primary" />,
