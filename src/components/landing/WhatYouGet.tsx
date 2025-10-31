@@ -1,7 +1,7 @@
 'use client';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Folder, Flame, Star, Palette, Rocket, PartyPopper } from "lucide-react";
+import { Folder, Flame, Star, Palette, Rocket, PartyPopper, Trophy } from "lucide-react";
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
@@ -87,8 +87,8 @@ const categories = [
       'https://i.imgur.com/dqWgEyT.png'
     ],
   },
-  {
-    icon: <Folder className="w-8 h-8 text-primary" />,
+    {
+    icon: <Trophy className="w-8 h-8 text-primary" />,
     title: "Jogadores e Cantores de Sertanejo",
     description: "Artes de ídolos do futebol e da música sertaneja.",
     quote: "A paixão nacional em forma de arte.",
@@ -181,11 +181,12 @@ export function WhatYouGet() {
     <section id="what-you-get-section" className="w-full py-12 md:py-24 lg:py-32 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+           <a id="what-you-get-section"></a>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             O que você recebe dentro do Pack:
           </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-            Tudo organizado em pastas temáticas, prontas para baixar e usar são mais de 20 categorias com artes campeãs de venda!
+             Tudo organizado em pastas temáticas, prontas para baixar e usar são mais de 20 categorias com artes campeãs de venda!
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
