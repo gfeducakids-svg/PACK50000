@@ -52,14 +52,6 @@ const faqs = [
 ];
 
 export function Faq() {
-
-  const handleScrollToCta = () => {
-    const elem = document.getElementById('cta-section');
-    elem?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
-
   return (
     <section className="w-full py-8 md:py-12 lg:py-16">
       <div className="container px-4 md:px-6">
@@ -83,15 +75,16 @@ export function Faq() {
           </Accordion>
         </div>
         <div className="mt-16 text-center">
+          <a href="https://pay.kiwify.com.br/ptNH5jX" target="_blank" rel="noopener noreferrer">
             <Button
               size="lg"
               variant="secondary"
               className="text-lg h-14"
-              onClick={handleScrollToCta}
             >
               Estou pronto para comprar <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-          </div>
+          </a>
+        </div>
       </div>
     </section>
   );

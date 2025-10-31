@@ -41,13 +41,6 @@ export function Cta() {
     };
   }, []);
 
-  const handleScrollToCta = () => {
-    const elem = document.getElementById('cta-section');
-    elem?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
-
   const formatTime = (time: number) => time.toString().padStart(2, "0");
 
   return (
@@ -57,7 +50,7 @@ export function Cta() {
     >
       <div className="container grid items-center justify-center gap-8 px-4 text-center md:px-6">
         <div className="w-full max-w-2xl mx-auto space-y-6">
-          <div className="inline-block rounded-lg bg-primary/10 px-4 py-2 text-base text-primary font-bold animate-pulse-slow shadow-lg border border-primary/20">
+          <div className="inline-block rounded-lg bg-yellow-400/20 px-4 py-2 text-base text-yellow-500 font-bold animate-pulse-slow shadow-lg border border-yellow-400/30">
             Oferta Relâmpago
           </div>
 
@@ -87,14 +80,15 @@ export function Cta() {
             <p className="text-sm text-muted-foreground">Pagamento Único / Acesso Vitalício</p>
           </div>
 
-          <Button
-            size="lg"
-            variant="secondary"
-            className="w-full text-lg h-16"
-            onClick={handleScrollToCta}
-          >
-            QUERO O PACK AGORA <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <a href="https://pay.kiwify.com.br/ptNH5jX" target="_blank" rel="noopener noreferrer">
+            <Button
+              size="lg"
+              variant="secondary"
+              className="w-full text-lg h-16"
+            >
+              QUERO O PACK AGORA <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </a>
 
           <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
             <Gift className="w-4 h-4 text-primary" />
