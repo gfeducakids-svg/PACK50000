@@ -35,12 +35,23 @@ export default function RootLayout({
         <div className="relative z-10">{children}</div>
         <Toaster />
         <Script
+          id="utmify-base"
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           data-utmify-prevent-xcod-sck
           data-utmify-prevent-subids
           async
           defer
         ></Script>
+        <Script id="utmify-pixel" strategy="afterInteractive">
+          {`
+            window.pixelId = "69041e8e1d480e2d005fb010";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            document.head.appendChild(a);
+          `}
+        </Script>
       </body>
     </html>
   );
