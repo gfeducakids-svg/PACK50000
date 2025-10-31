@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
@@ -21,7 +21,7 @@ export function Hero() {
       <div className="container px-4 md:px-6">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-6 text-center lg:text-left">
-            <h1 className="text-5xl font-bold tracking-tighter text-foreground sm:text-6xl md:text-7xl">
+            <h1 className="text-4xl font-bold tracking-tighter text-foreground sm:text-5xl md:text-6xl">
               O pack com 50.000 artes que os estúdios escondem para continuar cobrando caro de você.
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl">
