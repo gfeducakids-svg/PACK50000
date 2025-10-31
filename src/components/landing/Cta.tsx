@@ -84,7 +84,7 @@ export function Cta() {
             <Button
               size="lg"
               variant="secondary"
-              className="w-full text-lg h-16"
+              className="w-full text-lg h-16 font-bold"
             >
               QUERO O PACK AGORA <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

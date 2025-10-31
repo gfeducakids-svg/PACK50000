@@ -79,7 +79,7 @@ export function Faq() {
             <Button
               size="lg"
               variant="secondary"
-              className="text-lg h-14"
+              className="text-lg h-14 font-bold"
             >
               Estou pronto para comprar <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
