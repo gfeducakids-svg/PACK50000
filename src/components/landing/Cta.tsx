@@ -127,7 +127,7 @@ export function Cta() {
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <CreditCard className="w-5 h-5 text-primary" />
-            <span>Pagamento via PagSeguro</span>
+            <span>Pagamento Seguro</span>
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <RefreshCw className="w-5 h-5 text-primary" />
