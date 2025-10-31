@@ -54,11 +54,11 @@ export function Cta() {
   return (
     <section
       id="cta-section"
-      className="w-full py-20 md:py-28 lg:py-32 bg-primary/5 border-t border-b border-primary/10"
+      className="w-full py-12 md:py-16 lg:py-20 bg-primary/5 border-t border-b border-primary/10"
     >
       <div className="container grid items-center justify-center gap-8 px-4 text-center md:px-6">
         <div className="w-full max-w-2xl mx-auto space-y-6">
-          <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary font-semibold">
+          <div className="inline-block rounded-lg bg-primary/10 px-4 py-2 text-base text-primary font-bold animate-pulse-slow">
             Oferta Relâmpago
           </div>
 
@@ -82,9 +82,9 @@ export function Cta() {
           
           <div className="space-y-4">
             <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
-              <span className="text-3xl sm:text-4xl text-muted-foreground line-through">DE R$97,00</span> por apenas <span className="text-primary">R$19,90</span>
+              <span className="text-3xl sm:text-4xl text-destructive line-through">DE R$97,00</span> por apenas <span className="text-primary">R$19,90</span>
             </h2>
-            <p className="font-semibold text-lg text-primary">MENOS DE 1 CENTAVO POR ARTE!</p>
+            <p className="font-semibold text-base text-primary">MENOS DE 1 CENTAVO POR ARTE!</p>
             <p className="text-sm text-muted-foreground">Pagamento Único / Acesso Vitalício</p>
           </div>
 

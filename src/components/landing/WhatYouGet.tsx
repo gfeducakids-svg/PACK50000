@@ -178,7 +178,7 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
 
 export function WhatYouGet() {
   return (
-    <section id="what-you-get-section" className="w-full py-12 md:py-24 lg:py-32 bg-muted/30">
+    <section id="what-you-get-section" className="w-full py-12 md:py-16 lg:py-20 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
            <a id="what-you-get-section"></a>
