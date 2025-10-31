@@ -1,7 +1,7 @@
 'use client';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Folder, Flame, Star, Download, Music, Shield } from "lucide-react";
+import { Folder, Flame, Star, Download } from "lucide-react";
 import Image from "next/image";
 
 const categories = [
@@ -85,16 +85,11 @@ const categories = [
       'https://i.imgur.com/dqWgEyT.png'
     ],
   },
-    {
+  {
     icon: <Folder className="w-8 h-8 text-primary" />,
     title: "Jogadores e Cantores de Sertanejo",
     description: "Artes de ídolos do futebol e da música sertaneja.",
     quote: "A paixão nacional em forma de arte.",
-    images: [
-        'https://picsum.photos/seed/soccer1/400/300',
-        'https://picsum.photos/seed/sertanejo1/400/300',
-        'https://picsum.photos/seed/soccer2/400/300'
-    ],
   },
   {
     icon: <Download className="w-8 h-8 text-primary" />,
@@ -138,16 +133,18 @@ function CategoryCard({ category }: { category: (typeof categories)[0] }) {
           <p className="text-sm text-muted-foreground mb-3">{category.description}</p>
           <p className="text-sm font-italic text-foreground/80 border-l-2 border-primary pl-3">“{category.quote}”</p>
         </div>
-        <div className="relative mt-auto pt-4">
-            <div className="aspect-[4/3] relative">
-              <Image
-                src={category.images[0]}
-                alt={`${category.title} example 1`}
-                fill
-                className="object-cover rounded-md"
-              />
-            </div>
-        </div>
+        {category.images && category.images.length > 0 && (
+          <div className="relative mt-auto pt-4">
+              <div className="aspect-[4/3] relative">
+                <Image
+                  src={category.images[0]}
+                  alt={`${category.title} example 1`}
+                  fill
+                  className="object-cover rounded-md"
+                />
+              </div>
+          </div>
+        )}
       </CardContent>
     </Card>
   );
@@ -175,5 +172,3 @@ export function WhatYouGet() {
     </section>
   );
 }
-
-    
