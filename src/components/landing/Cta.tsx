@@ -58,6 +58,10 @@ export function Cta() {
     >
       <div className="container grid items-center justify-center gap-8 px-4 text-center md:px-6">
         <div className="w-full max-w-2xl mx-auto space-y-6">
+          <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary font-semibold">
+            Oferta Relâmpago
+          </div>
+
           <div className="text-left bg-background p-6 rounded-lg border">
             <h3 className="text-2xl font-bold mb-4">50.000 Artes customizáveis com formatos variados contendo:</h3>
             <ul className="space-y-2 text-muted-foreground text-left">
@@ -77,9 +81,6 @@ export function Cta() {
           </div>
           
           <div className="space-y-4">
-            <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary font-semibold">
-              Oferta Relâmpago
-            </div>
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
               Acesso vitalício por apenas <span className="text-primary">R$ 19,90</span>
             </h2>
