@@ -22,7 +22,7 @@ export function Hero() {
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-6 text-center lg:text-left">
             <h1 className="text-5xl font-bold tracking-tighter text-foreground sm:text-6xl md:text-7xl lg:text-8xl">
-              O Pack Secreto de 50MIL Artes Para Sublimação
+              O pack com 50.000 artes que os estúdios escondem para continuar cobrando caro de você.
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl">
               Pare de perder horas criando artes! Com nosso pack, você tem artes profissionais prontas para usar e editar, por um preço inacreditável.
